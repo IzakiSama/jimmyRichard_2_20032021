@@ -196,7 +196,7 @@ h1, h2, h3
 
 .hosting-card
 {
-    width: 240px;
+    width: 220px;
     padding: 5px 5px 10px 5px;
     margin-bottom: 20px;
     background-color: white;
@@ -204,7 +204,12 @@ h1, h2, h3
     box-shadow: 0 0 10px lightgrey;
 }
 
-.hosting-card > h3, p
+.hosting-card > h3
+{
+    margin: 7px;
+}
+
+.hosting-card > p
 {
     margin: 7px;
 }
@@ -216,7 +221,8 @@ h1, h2, h3
 
 .hosting-card img
 {
-    height: 120px;
+    height: 100px;
+    width: 210px;
 }
 
 .cover
@@ -232,19 +238,57 @@ h1, h2, h3
 {
     width: 35%;
     padding: 20px;
-    background-color: #4b4ba7;
+    background-color: #F2F2F2;
     border-radius: 20px;
 }
 
 .popular h2
 {
     font-weight: 900;
-    padding-bottom: 20px;
+    padding: 10px 20px 0 5px;
 }
 
-.popular-list
+.fa-chart-line
 {
-    padding: 20px;
+    margin-left: 100px;
+}
+
+.popular-card
+{
+    background-color: white;
+    padding: 5px 20px 5px 5px; 
+    margin: 25px 0 25px 0;
+    border-radius: 20px;
+    display: flex;
+    width: 300px;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.popular-card img
+{
+    height: 105px;
+    width: 90px;
+}
+
+.cover-popular
+{
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.popular-text > h3
+{
+    margin: 5px 0px 5px 15px;
+}
+
+.popular-text > p
+{
+    margin: 0 0 25px 15px;
+}
+
+.first-popular
+{
+    margin-left: 15px;
 }
 
 /* --------------- Média Queries ----------------*/
