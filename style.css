@@ -335,8 +335,17 @@ h1, h2, h3
 {
     display: grid;
     grid-gap: 20px;
-
 }
+
+.grid a
+{
+    margin: 0;
+}
+
+.grid > a > h3
+{
+    color: black;
+} 
 
 .activity-card
 {
