@@ -1,0 +1,476 @@
+/* charte graphique */
+
+/* bleu #0065FC */
+/* bleu clair #DEEBFF */
+/* gris #F2F2F2 */
+
+body
+{
+    font-family: 'Raleway', Arial, sans-serif;
+    padding-top: 2em;
+}
+
+.marge
+{
+    width: 1225px;
+    margin: auto;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1, h2, h3
+{
+    font-weight: bold;
+}
+
+.fa-star
+{
+    color: #0065FC;
+}
+
+.grey
+{
+    color: grey;
+}
+
+/* --------------------- HEADER ------------------*/
+
+#logo_nav
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+#logo_nav > img
+{
+    height: 50px;
+    width: auto;
+}
+
+#logo_nav > nav > a
+{
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #0065FC;
+}
+
+#logo_nav > nav > a:hover
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 20px;
+}
+
+#title
+{
+    margin-bottom: 15px;
+}
+
+#title > h1
+{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+#title > p
+{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#form
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.fa-map-marker-alt
+{
+    text-align: center;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 15px;
+}
+
+#form
+{
+    height: 40px;
+}
+
+#form > input
+{
+    width: 220px;
+    border: 1px solid #F2F2F2;
+    border-radius: 0;
+}
+
+.btn
+{
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: #0065FC;
+    border: none;
+    padding: 10px;
+}
+
+#filters
+{
+    display: flex;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.fading-1 
+{
+    background: linear-gradient(-45deg, transparent calc(100%/3), rgba(0, 0, 0, 0.5), transparent calc(200%/3)) bottom right/350% 100% no-repeat;
+    transition: 0.5s linear, background-size 0s 0.5s;
+}
+
+.fading-1:hover 
+{
+    background-position: bottom left;
+    background-size: 0 0;
+  }
+
+#filters > a
+{
+    border: 2px solid lightgrey;
+    border-left: 0;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+
+.fa-cat, .fa-money-bill-wave, .fa-child, .fa-heart
+{
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#filters > h3
+{
+    padding-top: 10px;
+}
+
+#filters > h3, a
+{
+    margin: 10px 20px 10px 0;
+    font-weight: bolder;
+}
+
+
+.fa-info
+{
+    font-size: 10px;
+    color: #0065FC;
+    padding: 5px 8px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    margin: 0 10px 20px 0;
+}
+
+
+/* --------------- Section ------------------*/
+
+#main
+{
+    display: flex;
+}
+
+#hosting
+{
+    width: 100%;
+    margin-right: 30px;
+    padding: 35px 0 35px 35px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+#hosting h2
+{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+#hosting > p
+{
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.hosting-list
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 15px;
+}
+
+.hosting-card
+{
+    width: 210px;
+    padding: 5px 5px 10px 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px lightgrey;
+    color: black;
+}
+
+.hosting-card > h3
+{
+    margin: 7px;
+}
+
+.hosting-card > p
+{
+    margin: 7px;
+    font-weight: 100;
+}
+
+.first
+{
+    margin-left: 7px;
+}
+
+.hosting-card img
+{
+    height: 100px;
+    width: 210px;
+}
+
+.cover
+{
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 5px;
+    object-fit: cover;
+    width: 230px;
+    height: 60%;
+}
+
+.popular
+{
+    width: 35%;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.popular h2
+{
+    font-weight: 900;
+    padding: 10px 20px 0 5px;
+}
+
+.fa-chart-line
+{
+    margin-left: 100px;
+}
+
+.popular-card
+{
+    background-color: white;
+    padding: 5px 20px 2px 5px; 
+    margin: 25px 0 25px 0;
+    border-radius: 20px;
+    display: flex;
+    width: 280px;
+    box-shadow: 0 0 10px lightgrey;
+    color: black;
+}
+
+.popular-card img
+{
+    height: 105px;
+    width: 90px;
+}
+
+.cover-popular
+{
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+
+.popular-text > h3
+{
+    margin: 5px 0px 5px 15px;
+}
+
+.popular-text > p
+{
+    margin: 0 0 30px 15px;
+    font-weight: 100;
+}
+
+.first-popular
+{
+    margin-left: 15px;
+}
+
+#activities
+{
+    margin-bottom: 50px;
+}
+
+#activities > h2
+{
+    margin: 50px 0 20px 0;
+}
+
+.grid
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 220px 50px 170px;
+}
+
+.grid a
+{
+    margin: 0;
+}
+
+.grid > a > h3
+{
+    color: black;
+} 
+
+.activity-card
+{
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgrey;
+}
+
+.activity-card > h3
+{
+    padding: 15px;
+}
+
+.activity-card img
+{
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+    width: 280px;
+}
+
+.card1
+{
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+.card1 > img
+{
+    height: 430px;
+}
+
+.card2
+{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.card2 > img
+{
+    height: 240px;
+}
+
+.card3
+{
+    grid-column: 2;
+    grid-row: 3/4;
+}
+
+.card3 > img
+{
+    height: 120px;
+}
+
+.card4
+{
+    grid-column: 3;
+    grid-row: 1/4;
+}
+
+.card4 > img
+{
+    height: 430px;
+}
+
+.card5
+{
+    grid-column: 4;
+    grid-row: 1/2;
+}
+
+.card5 > img
+{
+    height: 170px;
+}
+
+.card6
+{
+    grid-column: 4;
+    grid-row: 2/4;
+}
+
+.card6 > img
+{
+    height: 190px;
+}
+
+/* --------------- Footer ----------------*/
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+footer > div
+{
+    margin: 20px 200px 20px 20px;
+}
+
+footer > div > h3
+{
+    margin-bottom: 20px;
+}
+
+footer > div > a
+{
+    font-weight: 200;
+    color: black;
+    margin: 5px 0 10px 0;
+    display: flex;
+}
+
+
+/* --------------- Média Queries ----------------*/
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+       
+    }
+}
+
