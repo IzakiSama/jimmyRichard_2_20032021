@@ -543,6 +543,18 @@ footer > div > h3
     .popular
     {
         width: auto;
+        border-radius: 0;
+    }
+
+    .popular > h2
+    {
+        font-size: 1.2em;
+    }
+
+    .popular-card
+    {
+        margin: 1em 0;
+        width: auto; 
     }
 
     #activities
