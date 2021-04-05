@@ -161,6 +161,8 @@ h1, h2, h3
     border-left: 0;
     border-radius: 20px;
     padding-right: 10px;
+    margin: 0 1em 1em 1em;
+    font-weight: bold;
 }
 
 .fa-cat, .fa-money-bill-wave, .fa-child, .fa-heart
@@ -176,13 +178,6 @@ h1, h2, h3
 {
     padding-top: 10px;
 }
-
-#filters > h3, a
-{
-    margin: 10px 20px 10px 0;
-    font-weight: bolder;
-}
-
 
 .fa-info
 {
@@ -204,7 +199,6 @@ h1, h2, h3
 
 #hosting
 {
-    width: 100%;
     margin-right: 30px;
     padding: 35px 0 35px 35px;
     background-color: #F2F2F2;
@@ -484,7 +478,6 @@ footer > div > h3
 {
     .marge
     {
-        background-color: aqua;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -523,6 +516,23 @@ footer > div > h3
     #hosting
     {
         background-color: white;
+        padding: 1em;
+        margin: 0;
+    }
+
+    #hosting h2
+    {
+        margin-top: 1em;
+    }
+
+    .hosting-list
+    {
+        padding: 0;
+    }
+
+    .hosting-card
+    {
+        margin-bottom: 1em;
     }
 
     .hosting-card > img
@@ -532,12 +542,18 @@ footer > div > h3
 
     .popular
     {
-        width: 100%;
+        width: auto;
     }
 
     #activities
     {
         padding: 1em;
+    }
+
+    #activities > h2
+    {
+        font-size: 1.3em;
+        margin-top: 0.7em;
     }
 
     .activity-card
