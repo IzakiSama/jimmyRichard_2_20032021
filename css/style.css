@@ -60,8 +60,7 @@ h1, h2, h3
 
 #logo_nav > nav > a
 {
-    margin-left: 50px;
-    font-size: 15px;
+    margin-left: 3em;
 }
 
 .sub
@@ -74,7 +73,7 @@ h1, h2, h3
 {
     border-top: 3px solid #0065FC;
     padding-top: 20px;
-    color: #0065FC
+    color: #0065FC;
 }
 
 #title
@@ -465,10 +464,15 @@ footer > div > h3
     flex-wrap: wrap;
 }
 
+.marge-footer > div
+{
+    padding: 1em;
+}
+
 .marge-footer > div > a
 {
     display: block;
-    font-weight: lighter;
+    padding: 1em 1em 0 0;
 }
 
 /* --------------- Média Queries ----------------*/
@@ -585,14 +589,14 @@ footer > div > h3
         flex-wrap: wrap;
     }
 
-    .marge-footer
+    footer
     {
-        display: flex;
+        display: inherit;
     }
 
-    .marge-footer > div
+    .marge-footer > div > a
     {
-        margin: 1em;
+        padding: 1em 0 0 0;
     }
 
 }
