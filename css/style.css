@@ -48,14 +48,17 @@ h1, h2, h3
 {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 1.5em;
 }
 
-#logo_nav > img
+#logo_nav > p > img
 {
     height: 50px;
-    width: auto;
+}
+
+.item1
+{
+    width: 50%;
 }
 
 #logo_nav > nav > a
@@ -69,7 +72,7 @@ h1, h2, h3
     font-weight: bold;
 }
 
-#logo_nav > nav > a:hover
+#logo_nav > p > a:hover
 {
     border-top: 3px solid #0065FC;
     padding-top: 20px;
@@ -183,6 +186,12 @@ h1, h2, h3
 #filters > h3
 {
     padding-top: 10px;
+}
+
+.info
+{
+    display: flex;
+    align-items: baseline;
 }
 
 .fa-info
@@ -488,21 +497,72 @@ footer > div > h3
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
 @media all and (max-width: 1024px)
 {
+    body
+    {
+        margin-top: 0;
+    }
+
     .marge
     {
-        display: flex;
-        flex-direction: column;
         width: 100%;
     }
 
-    header
+    .top
     {
         margin: 1em;
     }
 
     #logo_nav
     {
-        display: inherit;
+        padding: 1em 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .item1
+    {
+        order: 1;
+        margin-bottom: 1em;
+    }
+
+    .item2
+    {
+        order: 3;
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 1em;
+    }
+
+    .item2 > a
+    {
+        color: #0065FC;
+    }
+
+    .item3
+    {
+        order: 4;
+        width: 50%;
+        text-align: center;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 1em;
+    }
+
+    .item4
+    {
+        order: 2;
+        margin-bottom: 1em;
+    }
+
+    .item2, .item3
+    {
+        justify-content: space-between;
+    }
+
+    #title
+    {
+        margin: 2em 0 2em 0;
     }
 
     #form > input
