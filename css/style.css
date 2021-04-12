@@ -623,6 +623,7 @@ footer > div > h3
 
     .hosting-card
     {
+        width: 100%;
         margin-bottom: 1em;
     }
 
