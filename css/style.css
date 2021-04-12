@@ -190,6 +190,11 @@ input::placeholder
     margin-right: 10px;
 }
 
+.fa-child:before
+{
+    padding: 3px;
+}
+
 #filters > h3
 {
     padding-top: 10px;
@@ -222,7 +227,7 @@ input::placeholder
 #hosting
 {
     margin-right: 30px;
-    padding: 35px 0 35px 35px;
+    padding: 35px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -236,7 +241,6 @@ input::placeholder
 #hosting > p
 {
     font-weight: 900;
-    margin-top: 20px;
 }
 
 .hosting-list
@@ -244,12 +248,11 @@ input::placeholder
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 15px;
 }
 
 .hosting-card
 {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding: 5px 5px 10px 5px;
     background-color: white;
     border-radius: 20px;
@@ -323,8 +326,8 @@ input::placeholder
 
 .popular-card img
 {
-    height: 105px;
-    width: 90px;
+    height: 8em;
+    width: 120px;
 }
 
 .cover-popular
@@ -468,7 +471,6 @@ footer
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
     padding: 1em;
 }
 
@@ -499,7 +501,7 @@ footer > div > h3
 /* --------------- Média Queries ----------------*/
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
-@media all and (max-width: 1024px)
+@media all and (max-width: 1025px)
 {
     body
     {
