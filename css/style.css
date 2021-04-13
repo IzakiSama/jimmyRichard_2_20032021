@@ -12,7 +12,7 @@ body
 
 .marge
 {
-    width: 62%; /*1225px*/
+    width: 62%;
     margin: auto;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3
     color: grey;
 }
 
-/* --------------------- HEADER ------------------*/
+/******************** HEADER *********************/
 
 #logo_nav
 {
@@ -217,7 +217,7 @@ input::placeholder
 }
 
 
-/* --------------- Section ------------------*/
+/**************** Section ******************/
 
 #main
 {
@@ -324,14 +324,10 @@ input::placeholder
     color: black;
 }
 
-.popular-card img
+.cover-popular
 {
     height: 8em;
     width: 120px;
-}
-
-.cover-popular
-{
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
@@ -464,7 +460,7 @@ input::placeholder
     height: 190px;
 }
 
-/* --------------- Footer ----------------*/
+/******************* Footer *****************/
 
 footer
 {
@@ -498,7 +494,7 @@ footer > div > h3
     padding: 1em 1em 0 0;
 }
 
-/* --------------- Média Queries ----------------*/
+/******************* Média Queries ******************/
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
 @media all and (max-width: 1025px)
@@ -625,7 +621,7 @@ footer > div > h3
 
     .hosting-card
     {
-        width: 100%;
+        width: 48%;
         margin-bottom: 1em;
     }
 
@@ -651,6 +647,11 @@ footer > div > h3
         width: auto; 
     }
 
+    .cover-popular
+    {
+        width: 355px;
+    }
+
     #activities
     {
         padding: 1em;
@@ -664,7 +665,7 @@ footer > div > h3
 
     .activity-card
     {
-        width: 100%;
+        width: 48%;
     }
 
     .activity-card img
@@ -684,10 +685,38 @@ footer > div > h3
         display: inherit;
     }
 
+    .marge-footer
+    {
+        width: auto;
+    }
+
+    
     .marge-footer > div > a
     {
         padding: 1em 0 0 0;
     }
-
 }
 
+/***************** Mobile *******************/
+@media all and (max-width: 425px)
+{
+    .hosting-card
+    {
+        width: 100%;
+    }
+
+    .activity-card
+    {
+        width: 100%;
+    }
+
+    .cover-popular
+    {
+        width: 120px;
+    }
+
+    .marge-footer
+    {
+        flex-direction: column;
+    }
+}
